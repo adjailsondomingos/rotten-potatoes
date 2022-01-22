@@ -28,5 +28,5 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: 
-            adjaylson/rottem-potatoes:latest 
-            adjaylson/rottem-potatoes:v4 #${{ github.run_number }}
+            adjaylson/rotten-potatoes:latest 
+            adjaylson/rotten-potatoes:${{ github.run_number }}
