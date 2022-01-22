@@ -27,6 +27,6 @@ jobs:
           context: ./src
           file: ./src/Dockerfile
           push: true
-          tags: 
+          tags: |
             adjaylson/rotten-potatoes:latest 
             adjaylson/rotten-potatoes:${{github.run_number}}
