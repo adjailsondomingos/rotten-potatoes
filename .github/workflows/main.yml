@@ -29,4 +29,4 @@ jobs:
           push: true
           tags: 
             adjaylson/rotten-potatoes:latest 
-            adjaylson/rotten-potatoes:${{ github.run_number }}
+            adjaylson/rotten-potatoes:${{github.run_number}}
