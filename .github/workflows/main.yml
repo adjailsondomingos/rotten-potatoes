@@ -39,10 +39,9 @@ jobs:
 
       - name: Kubernetes Set Context
         uses: Azure/k8s-set-context@v2
-        with: 
-          #cluster-type: # default is generic 
-          method: kubeconfig # default is kubeconfig 
-          kubeconfig: ${{ secrets.K8S_CONFIG }} # optional  
+        with:  
+          method: kubeconfig  
+          kubeconfig: ${{ secrets.K8S_CONFIG }}  S
 
       - name: Deploy to Kubernetes cluster
         uses: Azure/k8s-deploy@v1.5
