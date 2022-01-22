@@ -43,3 +43,10 @@ jobs:
           #cluster-type: # default is generic 
           method: kubeconfig # default is kubeconfig 
           kubeconfig: ${{ secrets.K8S_CONFIG }} # optional  
+
+      - name: Deploy to Kubernetes cluster
+        uses: Azure/k8s-deploy@v1.5
+        with:
+          images: adjaylson/rotten-potatoes:${{github.run_number}} 
+          manifests: |
+            k8s/Deployment.yaml
